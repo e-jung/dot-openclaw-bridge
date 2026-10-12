@@ -1,0 +1,11 @@
+{
+  "enabled": false,
+  "kind": "sessions",
+  "mode": "standing",
+  "owner": "00000000-0000-4000-8000-000000000001",
+  "agent": "main",
+  "targets": "visible-main",
+  "policyId": "00000000-0000-4000-8000-000000000002",
+  "timeoutSeconds": 120,
+  "maxModelTurnsPerDay": 100
+}

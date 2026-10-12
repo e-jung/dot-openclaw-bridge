@@ -1,0 +1,14 @@
+{
+  "enabled": false,
+  "kind": "sessions",
+  "owner": "00000000-0000-4000-8000-000000000001",
+  "agent": "main",
+  "expiresAt": "1970-01-01T00:00:00.000Z",
+  "timeoutSeconds": 120,
+  "createTasks": ["Do not use tools. Reply exactly SESSION_TEST_OK."],
+  "followupTasks": ["Do not use tools. Reply exactly SESSION_FOLLOWUP_OK."],
+  "maxCreations": 1,
+  "maxFollowups": 1,
+  "maxAssignments": 1,
+  "allowedSessionKeys": []
+}

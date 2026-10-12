@@ -1,0 +1,24 @@
+{
+  "name": "dot-openclaw-bridge",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Approval-gated private-stdio OpenClaw bridge with durable bounded jobs",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "stdio": "node src/stdio.mjs",
+    "worker": "node src/worker.mjs --approved",
+    "test": "node --test test/*.test.mjs",
+    "check:health": "node scripts/check-health.mjs --require-ready"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "@openclaw/gateway-client": "2026.8.1",
+    "@openclaw/gateway-protocol": "2026.8.1",
+    "zod": "4.3.6"
+  },
+  "license": "MIT"
+}
