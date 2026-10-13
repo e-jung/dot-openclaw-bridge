@@ -1,0 +1,6 @@
+{
+  "name": "dot-openclaw-bridge-setup",
+  "version": "0.1.0",
+  "description": "Guided setup for a private, owner-bound dot / OpenClaw MCP bridge. Bring your own Gateway and tunnel.",
+  "skills": "./skills/"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dot-openclaw-bridge-setup",
+  "name": "Dot OpenClaw Bridge Setup",
+  "version": "0.1.0",
+  "description": "Guided setup instructions; no runtime, credentials, or shared connection bundled.",
+  "categories": [
+    "developer-tools"
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+  }
+}

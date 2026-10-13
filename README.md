@@ -43,3 +43,7 @@ No tool can approve pairing, change policy, or configure an arbitrary Gateway. N
 - Local authenticated readiness does not prove dot chat and voice share a route or that completion wakes a disconnected client.
 
 See [architecture and roadmap](docs/ARCHITECTURE.md), [operations](docs/OPERATIONS.md), and [security](SECURITY.md). The existing issue about bounded session-history truncation remains open.
+
+## Guided community setup
+
+The [setup plugin bundle](plugins/dot-openclaw-bridge-setup/README.md) provides agent-guided installation for your own Gateway and private tunnel. It contains instructions, not a hosted connection or automatic deployment. Install it from this repository; ClawHub publication is pending. Each user creates their own ChatGPT custom MCP connection.
