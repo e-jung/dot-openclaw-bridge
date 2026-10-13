@@ -28,6 +28,8 @@ Health/discovery works without granting session access. To enable access deliber
 4. For systemd, put the two environment settings in `~/.config/dot-openclaw-bridge/worker.env` (0600). Install the provided user unit after adjusting its checkout and Node paths. It assumes `~/dot-openclaw-bridge`. Run `systemctl --user daemon-reload` and `systemctl --user enable --now dot-bridge-session-worker.service`.
 5. Connect your private MCP transport to `node /absolute/path/to/src/stdio.mjs`, with the same environment. Run `npm run check:health` to require authenticated readiness. Keep your tunnel profile and credentials outside Git. A tunnel binary or dot plugin is not bundled.
 
+Bounded job dispatch is a separate manual path, never combined with session grants: copy `deploy/job-approval.example.json` to `approval.json` in the checkout root (0600, `enabled: true` set explicitly) and run `npm run worker`. It uses no tunnel endpoint; it requires the official OpenClaw client installed under `~/.local/lib/node_modules/openclaw` (exactly 2026.9.7, hash-pinned) and a local loopback token-auth Gateway on `127.0.0.1:18789`. Version or configuration drift fails closed.
+
 No tool can approve pairing, change policy, or configure an arbitrary Gateway. Never expose the loopback HTTP adapter directly to the Internet. Deployment is manual and experimental; clean-install and dot chat/voice interoperability are not certified.
 
 ## Known limits
