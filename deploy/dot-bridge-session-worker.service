@@ -1,0 +1,25 @@
+[Unit]
+Description=Dot OpenClaw owner-verified session worker
+After=network-online.target openclaw-gateway.service
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=10
+
+[Service]
+Type=simple
+EnvironmentFile=%h/.config/dot-openclaw-bridge/worker.env
+WorkingDirectory=%h/dot-openclaw-bridge
+ExecStart=/usr/bin/node %h/dot-openclaw-bridge/src/standing-worker.mjs --run
+Restart=on-failure
+RestartPreventExitStatus=78
+RestartSec=60
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+LimitNOFILE=256
+TasksMax=64
+MemoryMax=512M
+TimeoutStopSec=20
+
+[Install]
+WantedBy=default.target

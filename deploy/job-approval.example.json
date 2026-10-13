@@ -1,0 +1,11 @@
+{
+  "enabled": false,
+  "agent": "main",
+  "expiresAt": "REPLACE_AFTER_EXPLICIT_APPROVAL_WITH_UTC_TIME_WITHIN_TWO_HOURS",
+  "maxAdmissions": 2,
+  "tasks": [
+    "Do not use tools. Reply exactly BRIDGE_TEST_OK.",
+    "Do not use tools. Generate a numbered list of 200 distinct simple arithmetic expressions and their answers. Use one expression per line."
+  ],
+  "timeoutSeconds": 120
+}

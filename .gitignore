@@ -1,0 +1,13 @@
+node_modules/
+state/
+work/
+evidence/
+approval.json
+.env
+*.env
+*.sqlite*
+*.log
+coverage/
+
+._*
+.DS_Store
